@@ -183,7 +183,8 @@ class TusClient {
   /// Pause the current upload
   pause() {
     _pauseUpload = true;
-    _chunkPatchFuture?.timeout(Duration.zero, onTimeout: () {});
+    //Todo temporary disable couse make error
+    //_chunkPatchFuture?.timeout(Duration.zero, onTimeout: () {});
   }
 
   /// Actions to be performed after a successful upload
